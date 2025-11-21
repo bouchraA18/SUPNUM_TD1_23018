@@ -35,7 +35,17 @@
             <scope>runtime</scope>
         </dependency>
         
-        <!-- Dépendance Swagger corrigée -->
+        <!-- Dépendances SOAP (pour l'exercice 2) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web-services</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+        </dependency>
+        
+        <!-- Dépendance Swagger (pour l'exercice 1 - gardée pour la documentation) -->
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
