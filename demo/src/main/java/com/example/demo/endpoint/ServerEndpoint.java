@@ -1,5 +1,4 @@
 package com.example.demo.endpoint;
-
 import com.example.demo.model.Server;
 import com.example.demo.service.ServerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,6 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -31,7 +29,6 @@ public class ServerEndpoint {
     public Element createServer(@RequestPayload Element request) throws TransformerException {
         String name = getElementValue(request, "name");
         String ipAddress = getElementValue(request, "ipAddress");
-        
         Server server = new Server();
         server.setName(name);
         server.setIpAddress(ipAddress);
